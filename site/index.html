@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<header>
     <nav>
         <ul class="BarraLateral">
             <li onclick=eBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="Black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -17,24 +18,44 @@
         </ul>    
         <ul>
             <li><a href="#">GO!</a></li>
-            <li class="eMobile"><a href="#">Planos</a></li>
-            <li class="eMobile"><a href="#">Sobre</a></li>
-            <li class="eMobile"><a href="#">Produtos</a></li>
-            <li class="eMobile"><a href="#">Contato</a></li>
+            <li class="Mobile"><a href="#">Planos</a></li>
+            <li class="Mobile"><a href="#">Sobre</a></li>
+            <li class="Mobile"><a href="#">Produtos</a></li>
+            <li class="Mobile"><a href="#">Contato</a></li>
             <li class="menu" onclick=mBarraLateral()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>    
-    </nav>
-
-
-    <script> // m = mostrar, e = esconder
-        function mBarraLateral(){
-            const BarraLateral = document.querySelector('.BarraLateral');
-            BarraLateral.style.display = 'flex';
-        }
-        function eBarraLateral(){
-            const BarraLateral = document.querySelector('.BarraLateral')
-            BarraLateral.style.display = 'none'
-        }
-    </script>
+        </ul>
+        
+        <div class="background"><a href="#"><img src="imagens/WhatsApp Image 2026-03-20 at 13.38.40.jpeg" width="100%"  alt=""></a></div>
+        <!-- melhorar a imagem deixar mais responsiva e aumentar qualidade, o href potencialmente vai pra aba de planos -->
+    </nav>    
+</header>
+    <div class="card-container">
+        <div class="card">
+            <h1>Prime Start</h1>
+            <p>A partir de</p>
+            <h1>R$ 89,99</h1>
+            <p>por mês</p>
+            <b>PLANO UNIVERSITARIO!</b>
+            <b>Musculação</b>
+            <b>Aulas Coletivas</b>
+            <b>Avaliação na Balança de Bioimpendância</b>
+            <button class="button"><a href="#">Inscrever-se</a></button>
+        </div> 
+        <div class="card">
+            <h1>Prime Top</h1>
+            <p>A partir de</p>
+            <h1>R$ 94,99</h1>
+            <p>por mês</p>
+            <b>PLANO COMUM</b>
+            <b>Musculação</b>
+            <b>Aulas Coletivas</b>
+            <b>Avaliação na Balança de Bioimpendância</b>
+            <button class="button"><a href="#">Inscrever-se</a></button>
+        </div>
+    </div>
+    
+    <!-- Alguem ai tbm arruma um svg(icone) pra colocar nessa porra -->
+    <!-- centraliza essa porra ai Bernardo ou yuri ou jonatha -->
+    <script src="app.js"></script>
 </body>
 </html>
