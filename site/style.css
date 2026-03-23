@@ -1,14 +1,11 @@
 * {
+    box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 body{
     min-height: 100vh;
-    background-image: url(Gemini_Generated_Image_xrbwdaxrbwdaxrbw.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav{
@@ -23,17 +20,18 @@ nav ul{
     align-items: center;
 }
 nav li{
-    height: 50px;
+    height: 80px;
 }
-nav a{
+nav ul a{
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
+    font-size: 22px;
     display: flex;
     align-items: center;
     color: black;
 }
-nav a:hover{
+nav ul a:hover{
     background-color: #f0f0f0;
     color: rgb(14, 204, 14);
 }
@@ -65,7 +63,7 @@ nav li:first-child{
     display: none;
 }
 @media(max-width: 800px){
-    .eMobile{
+    .Mobile{
         display: none;
     }
     .menu{
@@ -76,4 +74,61 @@ nav li:first-child{
     .BarraLateral{
         width: 100%;
     }
+}
+@media(max-width: 550px){
+    .card-container{
+        flex-direction: column;
+    }
+}
+.card-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 2em;
+    width: 300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+.card h1{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.card b{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.background{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.button{
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.button a{
+    text-decoration: none;
+    color: rgb(224, 255, 47);
 }
