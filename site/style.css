@@ -132,3 +132,28 @@ nav li:first-child{
     text-decoration: none;
     color: rgb(224, 255, 47);
 }
+
+/* Pagina de Produtos */
+
+.lista-produtos{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1em;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.produtos p{
+    font-weight: 600;
+}
+
+.produtos img{
+    height: auto;
+    border-radius: 10px;
+}
